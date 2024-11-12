@@ -1,0 +1,75 @@
+html, body {
+  font-size: 14px;
+  line-height: 1.5em;
+  background-image: url("https://i.ytimg.com/vi/Q1FglhxX6pQ/maxresdefault.jpg");
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+/* 
+设置了整个页面的字体大小为14px，
+行高为1.5em,
+背景颜色为白色，
+背景图片居中显示，
+不重复，覆盖整个页面，
+页面高度为100%
+*/
+#content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+}
+/*元素的阴影效果，并将背景设置为透明。*/
+#content #list-languages {
+  text-align: right;
+}
+/*文本对齐设置为左对齐*/
+#login {
+  float: none;
+  width: 100%;
+  margin-top: 120px;
+}
+#login #main {
+  position: relative;
+  width: 308px;
+  margin: 0 auto;
+  background-color: white;
+}
+#login #main .area {
+  margin-bottom: 20px;
+}
+#login #main .area input.required {
+  width: 294px;
+  height: 28px;
+  font-size: 14px;
+
+  background-color: #F3F3F3;
+  border-color: #F3F3F3;
+}
+#login #main .area input.required:hover,
+#login #main .area input.required:focus {
+  background-color: white;
+  border-color: #1BB6B7;
+  outline: none;
+}
+
+#login #main .area.btn-area input.btn-submit {
+  width: 308px;
+  height: 42px;
+  margin: 0;
+  border: 1px solid #18A5A5;
+  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+  background-color: #1BB6B7;
+  font-size: 14px;
+  color: white;
+}
+#content { -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomright: 4px; -moz-border-radius-bottomleft: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+#content { padding: 10px; overflow: hidden; }
+#main { padding: 20px; background: #eee; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+#main h2 { font-size: 1.4em; font-weight: normal; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #DDDDDD; }
+#main .area { margin-bottom: 10px; }
+#main .area label { display: block; color: #777777; }
+#main .area input[type=text],
+#main .area input[type=password] { padding: 6px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 1px solid #DDDDDD; background: #FFFFDD; }
