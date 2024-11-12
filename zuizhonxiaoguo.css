@@ -1,5 +1,6 @@
 /*幻灯片*/
 .slide {
+    margin-top: 50px;
     display: none;
     text-align: center;
 }
