@@ -7,18 +7,6 @@ window.onload = function(){
 }
 
 //最新消息
-function jumplink1() {
-    window.location.href = './最新消息/5.html';
-
-}
-function jumplink2() {
-    window.location.href = './最新消息/6.html'
-
-}
-function jumplink3() {
-    window.location.href = './最新消息/7.html'
-
-}
 var texts = document.getElementsByClassName('text');
 var links = ['./最新消息/2.html', './最新消息/3.html', './最新消息/4.html', './最新消息/5.html', './最新消息/6.html', './最新消息/7.html'];
 for (var i = 0; i < texts.length; i++) {
