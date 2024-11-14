@@ -4,7 +4,7 @@ window.onload = function(){
     for(var i = 0; i < image.length;i ++){
         image[i].style.cursor='pointer'
     }
-}
+
 
 //最新消息
 var texts = document.getElementsByClassName('text');
@@ -33,4 +33,5 @@ for (var i = 0; i < texts.length; i++) {
             window.location.href = this.href;
         }
     });
+}
 }

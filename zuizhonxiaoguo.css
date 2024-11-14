@@ -79,14 +79,17 @@
  color: #f8f5f5;
 }
 .imggc1 {
-width: 100%; /* 设置宽度为100% */
-height: auto; /* 高度自动调整以保持比例 */
-aspect-ratio: 1 / 1; /* 设置宽高比为1:1，确保为正方形 */
-object-fit: cover; /* 确保图片填满容器且不失真 */
+  width: 100%; /* 设置宽度为100% */
+  height: auto; /* 高度自动调整以保持比例 */
+  aspect-ratio: 1 / 1; /* 设置宽高比为1:1，确保为正方形 */
+  object-fit: cover; /* 确保图片填满容器且不失真 */
+  margin-bottom: 20px; /* 设置底部间距，确保与下面的图片一致 */
+  max-width: 223px; /* 设置最大宽度以控制图片大小 */
+  max-height: 223px; /* 设置最大高度以控制图片大小 */
 }
 table{margin: 0 auto;}
 .a{display: inline-block;
-width: 270px;
+width: 230px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;}
@@ -96,3 +99,68 @@ a:hover {text-decoration: underline;color:rgba(19, 112, 143, 0.89);}
 /*子页面*/
 .imggc2{width:70%;height:70%; margin:100px;}
 .botton{text-align: center;}
+.content-left{width: 70%;}
+.content-right{width: 30%;}
+.tablegc1{
+  table-layout: fixed; word-break: break-all; overflow: auto;
+  width: 100%;
+}
+td{
+  width: 33%;
+}
+
+/*右边栏*/
+.nav-box {
+  padding-right: 0;
+}
+.nav1-1 {
+  background: url(https://sao.cityu.edu.mo/template/01/img/titlebar2.png);
+  height: 35px;
+  padding: 0 15px;
+  line-height: 60px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+}
+.nav-box {
+  float: left;
+  width: 100%;
+}
+.nav-box a {
+  color: #337AB7;
+  text-decoration: none;
+}
+ul.nav1-2{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.li-1{
+  background-color: #f5912c7a;
+}
+.li-2{
+  background-color: antiquewhite;
+}
+.nav1-3 img{
+  width: 100%;
+}
+.nav-box a:hover {
+  color: #085aa1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.left{
+  width :70%;
+  float: left;
+}
+#left1{
+  width:50px;
+}
+#right{
+  width: 30%;
+  float: right;
+}
+#table{
+  width: 70%;
+}
