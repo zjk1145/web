@@ -8,7 +8,7 @@ window.onload = function(){
 
 //最新消息
 var texts = document.getElementsByClassName('text');
-var links = ['./最新消息/2.html', './最新消息/3.html', './最新消息/4.html', './最新消息/5.html', './最新消息/6.html', './最新消息/7.html'];
+var links = ['./最新消息/1.html', './最新消息/2.html', './最新消息/3.html', './最新消息/4.html', './最新消息/5.html', './最新消息/6.html'];
 for (var i = 0; i < texts.length; i++) {
     texts[i].style.color = '#337AB7';
 
