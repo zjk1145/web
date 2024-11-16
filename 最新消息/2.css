@@ -55,3 +55,20 @@ hr{width: 100%;
      aspect-ratio: 1 / 1; /* 设置宽高比为1:1，确保为正方形 */
      object-fit: cover; /* 确保图片填满容器且不失真 */
    }
+   .whole-image {
+    display: block;
+    margin: 0 auto;
+    width: 943px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: '宋体';
+}
+
+.button {
+    text-align: center;
+}
