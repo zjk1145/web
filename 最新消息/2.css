@@ -61,7 +61,9 @@ hr{width: 100%;
     width: 943px;
     height: auto;
 }
+ /*上述css为顶部与底部样式 与首页相同 */
 
+ /*子页面内容的标题样式*/
 h2 {
     text-align: center;
     font-size: 350%;
@@ -69,12 +71,18 @@ h2 {
     font-family: '宋体';
 }
 
+/*子页面底部按钮的样式*/
 .button {
+    color: lightblue;
     text-align: center;
 }
+
+/*子页面索引中部分文字的样式*/
 .index{ 
     color: grey;
 }
+
+/*索引中最新消息跳转界面的背景图 内容的样式*/
 .newpage{
     background-image: url(https://sao.cityu.edu.mo/uploads/theme/d47308c3ab39aae17cfd4050869e04fc.png);
     text-align: center;
