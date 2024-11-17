@@ -64,11 +64,18 @@ hr{width: 100%;
 
 h2 {
     text-align: center;
-    font-size: 200%;
+    font-size: 350%;
     font-weight: bold;
     font-family: '宋体';
 }
 
 .button {
+    text-align: center;
+}
+.index{ 
+    color: grey;
+}
+.newpage{
+    background-image: url(https://sao.cityu.edu.mo/uploads/theme/d47308c3ab39aae17cfd4050869e04fc.png);
     text-align: center;
 }
