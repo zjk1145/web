@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!----------------------------------------------头部以及背景-------------------------------------------------->
     <div class="toper">
         <div class="grid-container">
             <div class="grid-100 grid-parent">
@@ -65,6 +66,7 @@
                     </div>
                 </div>
                 <br>
+            <!-----------------------------------------下拉栏--------------------------------------------->
                 <div class="nav">
                     <ul class="navlist">
                         <li class="btli">首页</li>
@@ -111,6 +113,7 @@
                 </div>
             </header>
         </div>
+    <!-----------------------------------------幻灯片，调用slide-show套件---------------------------------------------------------------->
         <div>
             <div class="slideshow-container">
                 <div class="slide active">
@@ -167,10 +170,59 @@
                     <div class="page-square" onclick="goToSlide(11)"></div>
                 </div>
             </div>
+            <script>
+                // 幻灯片
+                let currentSlide = 0; // 当前显示的幻灯片索引
+                const slides = document.querySelectorAll('.slide'); // 获取所有幻灯片元素
+                const squares = document.querySelectorAll('.page-square'); // 获取所有分页指示器元素
+
+                // 显示指定索引的幻灯片
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        slide.classList.remove('active'); // 移除所有幻灯片的激活状态
+                        if (i === index) {
+                            slide.classList.add('active'); // 仅为当前索引的幻灯片添加激活状态
+                        }
+                    });
+                    updateSquares(index); // 更新分页指示器的状态
+                }
+
+                // 根据方向改变当前幻灯片
+                function changeSlide(direction) {
+                    currentSlide += direction; // 根据方向调整当前幻灯片索引
+                    if (currentSlide < 0) currentSlide = slides.length - 1; // 如果索引小于0，循环到最后一张幻灯片
+                    if (currentSlide >= slides.length) currentSlide = 0; // 如果索引超出范围，循环到第一张幻灯片
+                    showSlide(currentSlide); // 显示更新后的幻灯片
+                }
+
+                // 跳转到指定索引的幻灯片
+                function goToSlide(index) {
+                    currentSlide = parseInt(index); // 将索引转换为整数
+                    showSlide(currentSlide); // 显示指定的幻灯片
+                }
+
+                // 更新分页指示器的状态
+                function updateSquares(index) {
+                    squares.forEach((square, i) => {
+                        square.classList.remove('active-square'); // 移除所有指示器的激活状态
+                        if (i === index) {
+                            square.classList.add('active-square'); // 仅为当前索引的指示器添加激活状态
+                        }
+                    });
+                }
+
+                // 每5秒自动切换到下一张幻灯片
+                setInterval(() => {
+                    changeSlide(1); // 调用 changeSlide 函数，向前切换幻灯片
+                }, 5000); // 每5000毫秒（5秒）执行一次
+            </script>
         </div>
+        <!------------------------------------内容部分--------------------------------------------------------------->
         <div class="content" style="display: flex;">
+            <!--div左右布局-->
             <div class="content-left">
                 <div>
+                <!--------------------------------------最新消息部分·------------------------------------------------------->
                 <div id="line-title">
                     <img src="https://sao.cityu.edu.mo/template/01/img/stylebg.png" id="title-image">
                     <p id="line1-word">最新消息</p>
@@ -238,7 +290,7 @@
                     </table>
                 </div>
             </div>
-
+            <!----------------------------------------------最新活动部分-------------------------------------------------->
             <div class="divgc1">
                 <p class="pgc1">最新活動</p>
             </div>
@@ -287,6 +339,7 @@
 
             </table>   
         </div>
+        <!-------------------------------------------------右边栏部分------------------------------------------------------------------>
         <div class="content-right">
             <div class="nav-box">
                 <div class="nav1-1">最新公告</div>
@@ -310,6 +363,7 @@
               </div>
         </div>
     </div>
+    <!---------------------------------------------footer部分---------------------------------------------------------->
     <div>
         <hr>
         <div>
@@ -343,42 +397,6 @@
             <p class="text-center-copyright">© 澳門城市大學 學生事務處</p>
         </div>
     </div>
-    <script>
-        //幻灯片
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const squares = document.querySelectorAll('.page-square');
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
-                if (i === index) {
-                    slide.classList.add('active');
-                }
-            });
-            updateSquares(index); // 更新正方形状态
-        }
-        function changeSlide(direction) {
-            currentSlide += direction;
-            if (currentSlide < 0) currentSlide = slides.length - 1;
-            if (currentSlide >= slides.length) currentSlide = 0;
-            showSlide(currentSlide);
-        }
-        function goToSlide(index) {
-            currentSlide = parseInt(index);
-            showSlide(currentSlide);
-        }
-        function updateSquares(index) {
-            squares.forEach((square, i) => {
-                square.classList.remove('active-square');
-                if (i === index) {
-                    square.classList.add('active-square');
-                }
-            });
-        }
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000); // 每10秒切换一次幻灯片
-    </script>
     </div>
 </body>
 
