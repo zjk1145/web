@@ -73,8 +73,19 @@ h2 {
 
 /*子页面底部按钮的样式*/
 .button {
-    color: lightblue;
     text-align: center;
+}
+
+#return{
+    color: lightblue;
+}
+
+#prevButton{
+    color:lightblue
+}
+
+#nextButton{
+    color:lightblue
 }
 
 /*子页面索引中部分文字的样式*/
