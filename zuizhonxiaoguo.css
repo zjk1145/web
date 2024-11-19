@@ -98,8 +98,8 @@ a:hover {text-decoration: underline;color:rgba(19, 112, 143, 0.89);}
 /*子页面*/
 .imggc2{width:70%;height:70%; margin:100px;}
 .botton{text-align: center;}
-.content-left{width: 70%;}
-.content-right{width: 30%;}
+.content-left{width: 70%; padding-right: 10px;}
+.content-right{width: 30%; padding-left: 10px;}
 .tablegc1{
   table-layout: fixed; word-break: break-all; overflow: auto;
   width: 100%;
