@@ -98,3 +98,21 @@ h2 {
     background-image: url(https://sao.cityu.edu.mo/uploads/theme/d47308c3ab39aae17cfd4050869e04fc.png);
     text-align: center;
 }
+
+#left-icon{
+    position: absolute;
+    left: 5;
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+}
+
+#expand{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 110px;
+    height: 110px;
+    background-color: green;
+  }
