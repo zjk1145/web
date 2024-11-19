@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳門城市大學 學生事務處</title>
+    <link rel="stylesheet" href="./toubu.css">
+    <link rel="stylesheet" href="./zuizhonxiaoguo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="https://login.cityu.edu.mo/cas/images/favicon.ico" type="image/x-icon">
+    <script src="zuizhongxiaoguo.js"></script>
+</head>
+
+<body>
+    <!----------------------------------------------头部以及背景-------------------------------------------------->
+    <div class="toper">
+        <div class="grid-container">
+            <div class="grid-100 grid-parent">
+                <div class="grid-50 grid-parent">
+                    <ul class="simple1">
+                        <li><a href="http://www.cityu.edu.mo/" target="_blank"><i class="fa fa-home"></i> 城大首頁</a></li>
+                        <li><a href="https://login.microsoftonline.com/login.srf" target="_blank"><i
+                                    class="fa fa-envelope"></i> 電子郵件</a></li>
+                        <li><a href="contact"><i class="fa fa-user"></i> 聯絡我們</a></li>
+                        <li><a href="https://tronclass.cityu.edu.mo" target="_blank"><i
+                                    class="fa fa-graduation-cap"></i> TronClass教學系統</a></li>
+                    </ul>
+                </div>
+                <div class="grid-25 grid-parent">
+                    <ul class="simple2">
+                        <li style="margin-right:5px;"><a href=""><img src="./头部背景/icon-facebook.png"></a></li>
+                        <li style="margin-right:5px;"><a href=""><img src="./头部背景/icon-weibo.png"></a></li>
+                        <li style="margin-right:5px;"><a href=""><img src="./头部背景/icon-youtube.png"></a></li>
+                    </ul>
+                </div>
+                <div class="grid-25 grid-parent">
+                    <ul class="language">
+                        <li><a href="javascript:zh_tran('t');" id="zh_click_t">中文繁體</a></li>
+                        <li><a href="javascript:zh_tran('s');" id="zh_click_s">中文简体</a></li>
+                        <li><a href="https://sao.cityu.edu.mo/en">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="warpper">
+        <div class="grid-container">
+            <header>
+                <br>
+                <div class="grid-100 grid-parent">
+                    <div class="grid-60 grid-parent text-left">
+                        <a href="https://sao.cityu.edu.mo/home" class="logo" title="澳门城市大学 学生事务处"><img
+                                src="https://sao.cityu.edu.mo/uploads/theme/b1f2dc38847b8ad6940be02a90bff81a.png"
+                                alt="澳门城市大学 学生事务处"></a>
+                    </div>
+                    <div class="grid-40 text-right grid-parent">
+                        <div class="search-bar input-append">
+                            <form id="form_search" action="https://sao.cityu.edu.mo/search" method="get">
+                                <input id="keywords" name="keywords" value="" type="text" placeholder="輸入關鍵字">
+                                <button class="btn btn-style" type="submit">搜寻</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            <!-----------------------------------------下拉栏--------------------------------------------->
+                <div class="nav">
+                    <ul class="navlist">
+                        <li class="btli">首页</li>
+                        <li class="btli">关于我们
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-28">部门介绍</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/contact">联络我们</a></li>
+                            </ul>
+                        </li>
+                        <li class="btli">学生服务
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-77">校园储物柜租用</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/list-29">关于住宿</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/SAO_Counselling">心里健康</a></li>
+                            </ul>
+                        </li>
+                        <li class="btli">学生活动
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/list-18">最新公告</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/list-16">最新消息</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/list-14">最新活动</a></li>
+                            </ul>
+                        </li>
+                        <li class="btli" id="btli2"><a href="https://ungchoikunecc.cityu.edu.mo/">创业就业</a></li>
+                        <li class="btli">规章制度
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-21">学校各类规章制度</a></li>
+                            </ul>
+                        </li>
+                        <li class="btli">表格下载
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-26">学校各类规章制度</a></li>
+                            </ul>
+                        </li>
+                        <li class="btli">环保安全知识
+                            <ul class="drop">
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-101">防罪锦囊</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-78">防火安全知识</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/page-82">环境保护安全知识</a></li>
+                                <li class="btli1"><a href="https://sao.cityu.edu.mo/SecurityKnowledge">其他安全知识</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    <!-----------------------------------------幻灯片，调用slide-show套件---------------------------------------------------------------->
+        <div>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <a href="https://www.psy.com.cn/m/vant/#/school/162876/student/login"><img src="./幻灯片/1.png" alt=""></a>
+                    
+                </div>
+                <div class="slide">
+                    <a href=""><img src="./幻灯片/2.jpg" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1256"><img src="./幻灯片/3.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1251"><img src="./幻灯片/4.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1254"><img src="./幻灯片/5.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1250"><img src="./幻灯片/6.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1255"><img src="./幻灯片/7.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1252"><img src="./幻灯片/8.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://sao.cityu.edu.mo/list-16/1257"><img src="./幻灯片/9.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://mp.weixin.qq.com/s/WPlPIMZuIx_8VjmYNSsvHA"><img src="./幻灯片/10.jpg" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://mp.weixin.qq.com/s/rC9ZMZuwqW42Ksb-fxxw_A"><img src="./幻灯片/11.jpg" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a href="https://ungchoikunecc.cityu.edu.mo/"><img src="./幻灯片/12.png" alt=""></a>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="page-squares">
+                    <div class="page-square active-square" onclick="goToSlide(0)"></div>
+                    <div class="page-square" onclick="goToSlide(1)"></div>
+                    <div class="page-square" onclick="goToSlide(2)"></div>
+                    <div class="page-square" onclick="goToSlide(3)"></div>
+                    <div class="page-square" onclick="goToSlide(4)"></div>
+                    <div class="page-square" onclick="goToSlide(5)"></div>
+                    <div class="page-square" onclick="goToSlide(6)"></div>
+                    <div class="page-square" onclick="goToSlide(7)"></div>
+                    <div class="page-square" onclick="goToSlide(8)"></div>
+                    <div class="page-square" onclick="goToSlide(9)"></div>
+                    <div class="page-square" onclick="goToSlide(10)"></div>
+                    <div class="page-square" onclick="goToSlide(11)"></div>
+                </div>
+            </div>
+            <script>
+                // 幻灯片
+                let currentSlide = 0; // 当前显示的幻灯片索引
+                const slides = document.querySelectorAll('.slide'); // 获取所有幻灯片元素
+                const squares = document.querySelectorAll('.page-square'); // 获取所有分页指示器元素
+
+                // 显示指定索引的幻灯片
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        slide.classList.remove('active'); // 移除所有幻灯片的激活状态
+                        if (i === index) {
+                            slide.classList.add('active'); // 仅为当前索引的幻灯片添加激活状态
+                        }
+                    });
+                    updateSquares(index); // 更新分页指示器的状态
+                }
+
+                // 根据方向改变当前幻灯片
+                function changeSlide(direction) {
+                    currentSlide += direction; // 根据方向调整当前幻灯片索引
+                    if (currentSlide < 0) currentSlide = slides.length - 1; // 如果索引小于0，循环到最后一张幻灯片
+                    if (currentSlide >= slides.length) currentSlide = 0; // 如果索引超出范围，循环到第一张幻灯片
+                    showSlide(currentSlide); // 显示更新后的幻灯片
+                }
+
+                // 跳转到指定索引的幻灯片
+                function goToSlide(index) {
+                    currentSlide = parseInt(index); // 将索引转换为整数
+                    showSlide(currentSlide); // 显示指定的幻灯片
+                }
+
+                // 更新分页指示器的状态
+                function updateSquares(index) {
+                    squares.forEach((square, i) => {
+                        square.classList.remove('active-square'); // 移除所有指示器的激活状态
+                        if (i === index) {
+                            square.classList.add('active-square'); // 仅为当前索引的指示器添加激活状态
+                        }
+                    });
+                }
+
+                // 每5秒自动切换到下一张幻灯片
+                setInterval(() => {
+                    changeSlide(1); // 调用 changeSlide 函数，向前切换幻灯片
+                }, 5000); // 每5000毫秒（5秒）执行一次
+            </script>
+        </div>
+        <!------------------------------------内容部分--------------------------------------------------------------->
+        <div class="content" style="display: flex;">
+            <!--div左右布局-->
+            <div class="content-left">
+                <div>
+                <!--------------------------------------最新消息部分·------------------------------------------------------->
+                <div id="line-title">
+                    <img src="https://sao.cityu.edu.mo/template/01/img/stylebg.png" id="title-image">
+                    <p id="line1-word">最新消息</p>
+                </div>
+                <div id="bodypart">
+                    <!--用表格形式-->
+                    <table>
+                        <!--href输里面输入跳转的html文件-->
+                        <!--第一行图片部分-->
+                        <tr>
+                            <td><a href="./最新消息/1.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/110487601d7e992c7e0a8eb8d4593c66_500X500.png"
+                                        class="image1"></a>
+                            </td>
+                            <td><a href="./最新消息/2.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/68ed3a9f9f14c5ab2e65a15362153e46_500X500.png"
+                                        class="image1"></a>
+                            </td>
+                            <td><a href="./最新消息/3.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/73216cc21cf1ab5a3c6a9de37b1f9859_500X500.png"
+                                        class="image1"></a>
+                            </td>
+                        </tr>
+                        <!--第一行图片对应文字部分-->
+                        <!--该部分跳转由于样式较多写在zuizhongxiaoguo.js中-->
+                        <tr>
+                            <td style="text-align: center;">
+                                <p class="text">校園導覽，準備好和我Campus Walk了嗎?</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <p class="text">心理健康 | 別把焦慮塞進書包</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <p class="text">新生來澳小貼士</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--第二行图片部分-->
+                    <table>
+                        <tr>
+                            <td><a href="./最新消息/4.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/d3df17c40b7c04adeb5952839f8e1632_500X500.png"
+                                        class="image2"></a>
+                            </td>
+
+                            <td><a href="./最新消息/5.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/238f2e37597f6844099c9d05d86c4f4a_500X500.png"
+                                        class="image2"></a>
+                            </td>
+
+                            <td><a href="./最新消息/6.html"><img
+                                        src="https://sao.cityu.edu.mo/uploads_thumb/list/e75023822a807cd2b31b3364fda5f2a9_500X500.png"
+                                        class="image2"></a>
+                            </td>
+
+                        </tr>
+                        <!--第二行图片对应文字部分-->
+                        <!--该部分跳转同样在js中-->
+                        <tr>
+                            <td style="text-align: center;">
+                                <p class="text">申請特別逗留許可介紹</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <p class="text">2024/2025學年宿舍介紹</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <p class="text">關於我們 | 學生事務處</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!----------------------------------------------最新活动部分-------------------------------------------------->
+            <div class="divgc1">
+                <p class="pgc1">最新活動</p>
+            </div>
+            <table class="tablegc1">
+                <tr>
+                    <td>
+                        <a href="./最新活动/A1.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/1(134).jpg" class="imggc1"
+                                alt="澳門城市大學宿舍消防演習">
+                        </a><br>
+                        <a class="a" href="./最新活动/A1.html">實戰演練築防線，消防演習保平安—澳門城市大學宿舍消防演習</a>
+                    </td>
+                    <td><a href="./最新活动/A2.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/1(133).jpg" class="imggc1"
+                                alt="裝點媽閣塘秋日"></a><br>
+                        <a class="a" href="./最新活动/A2.html">媽閣秋意濃，創意畫玻璃—彩繪玻璃裝點媽閣塘秋日</a>
+                    </td>
+                    <td>
+                        <a href="./最新活动/A3.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/1(132).jpg" class="imggc1"
+                                alt="男子籃球隊喜獲澳門站亞軍"></a><br>
+                        <a class="a" href="./最新活动/A3.html">男子籃球隊喜獲大灣區3x3籃球賽澳門站亞軍</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="./最新活动/A4.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/3(111).jpg" class="imggc1"
+                                alt="澳門城市大學義工隊見面會圓滿結束"></a><br>
+                        <a class="a" href="./最新活动/A4.html">2024/2025學年澳門城市大學義工隊見面會圓滿結束</a>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="./最新活动/A5.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/2(124).jpg" class="imggc1"
+                                alt="水火無情，生命無價—入學安全講座順利舉行"></a><br>
+                        <a class="a" href="./最新活动/A5.html">水火無情，生命無價—入學安全講座順利舉行</a>
+                    </td>
+                    <td>
+                        <a href="./最新活动/A6.html">
+                            <img src="https://sao.cityu.edu.mo/uploads/userfiles/1(128).jpg" class="imggc1"
+                                alt="提防假冒「全城消費大獎賞」抽獎短訊"></a>
+                        <a class="a" href="./最新活动/A6.html">@所有人 | 提防假冒「全城消費大獎賞」抽獎短訊！</a>
+                    </td>
+                </tr>
+
+            </table>   
+        </div>
+        <!-------------------------------------------------右边栏部分------------------------------------------------------------------>
+        <div class="content-right">
+            <div class="nav-box">
+                <div class="nav1-1">最新公告</div>
+                      <ul class="nav1-2">
+                          <li class="li-1"><span>2024/07/22</span><a href="https://sao.cityu.edu.mo/list-18/1152">澳門城市大學關於鼓勵學生參加各類競賽活動得獎者的獎勵辦法更新通告</a></li>
+                          <li class="li-2"><span>2023/11/06</span><a href="https://sao.cityu.edu.mo/list-18/1167">請同學提高防騙意識的通告</a></li>
+                          <li class="li-1"><span>2023/08/29</span><a href="https://sao.cityu.edu.mo/list-18/1140">2023/2024學年儲物櫃租借</a></li>
+                          <li class="li-2"><span>2023/08/17</span><a href="https://sao.cityu.edu.mo/list-18/1139">2023/2024學年學生簽證相關資訊和注意事項</a></li>
+                          <li class="li-1"><span>2023/08/15</span><a href="https://sao.cityu.edu.mo/list-18/1133">2023/2024學年宿舍問題集</a></li>
+                          <li class="li-2"><span>2023/08/15</span><a href="https://sao.cityu.edu.mo/list-18/1131">2023/2024學年澳門城市大學宿舍抽籤及入住宿舍流程</a></li>
+                        </ul>
+                        <br>
+                  <div class="nav1-3"><a href="https://sao.cityu.edu.mo/list-18/1140"><img src="https://sao.cityu.edu.mo/uploads/theme/4ca4be18a14280b66c62f4da9a818e8c.png"></a></div>
+                  <br>
+                  <div class="nav1-3"><a href="https://ungchoikunecc.cityu.edu.mo/"><img src="https://sao.cityu.edu.mo/uploads/theme/11e118b2f1295153165956cba1bd413d.jpg"></a></div>
+                  <br>
+                  <div class="nav1-3"><a href="https://sao.cityu.edu.mo/list-16/1144"><img src="https://sao.cityu.edu.mo/uploads/theme/0f1657a465ede62a530f2d1a39a83f92.png"></a></div>
+                  <br>
+                  <div class="nav1-3"><a href=""><img src=""></a></div>
+                  <br>
+              </div>
+        </div>
+    </div>
+    <!---------------------------------------------footer部分---------------------------------------------------------->
+    <div>
+        <hr>
+        <div>
+            <ul class="ulgc1">
+                <li>
+                    <p><strong>關於我們</strong></p>
+                </li>
+                <li>
+                    <p><a id="footer1" href="https://sao.cityu.edu.mo/page-28" target="_self">學生事務處</a></p>
+                </li>
+                <li>
+                    <p><a id="footer1" href="https://sao.cityu.edu.mo/contact" target="_self">聯絡我們</a></p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ulgc2">
+                <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://sao.cityu.edu.mo/"><img
+                            src="https://cdn-fusion.imgcdn.store/i/2024/58a5f9dc0bc2b8eb.png"
+                            alt="facebook"></a></li>
+                <li><a href="https://twitter.com/intent/session?original_referer=https://sao.cityu.edu.mo/"><img
+                            src="https://cdn-fusion.imgcdn.store/i/2024/ecbe3009f31ded70.png" alt="twitter"></a>
+                </li>
+                <li><a href="https://plus.google.com/share?url=https://sao.cityu.edu.mo/"><img
+                            src="https://cdn-fusion.imgcdn.store/i/2024/cfc3eb5f765dfb9e.png"
+                            alt="googleplus"></a></li>
+                <li><a href="http://service.weibo.com/share/share.php?url=https://sao.cityu.edu.mo/"><img
+                            src="https://cdn-fusion.imgcdn.store/i/2024/9e4a1f8db95ea225.png" alt="weibo"></a>
+                </li>
+            </ul>
+            <p class="text-center-copyright">© 澳門城市大學 學生事務處</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
