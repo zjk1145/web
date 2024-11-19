@@ -3,7 +3,8 @@ const users = [
   { username: "D24090101847", password: "66666666" },
   { username: "D24090101564", password: "99999999" },
   { username: "D24090103061", password: "11451419" },
-  { username: "D24090102731", password: "88888888" }
+  { username: "D24090102731", password: "88888888" },
+  { username: "D24090102939", password: "zlwsgxtc"}
 ];
 function check() {
   const username = document.getElementById('username').value;
