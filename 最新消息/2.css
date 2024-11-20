@@ -99,6 +99,7 @@ h2 {
     text-align: center;
 }
 
+/*左边小标签样式*/
 #left-icon{
     position: absolute;
     left: 5;
@@ -107,6 +108,7 @@ h2 {
     height: 50px;
 }
 
+/*小标签扩展样式*/
 #expand{
     display: none;
     position: absolute;
