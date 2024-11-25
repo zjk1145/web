@@ -4,7 +4,8 @@ const users = [
   { username: "D24090101564", password: "99999999" },
   { username: "D24090103061", password: "11451419" },
   { username: "D24090102731", password: "88888888" },
-  { username: "D24090102939", password: "zlwsgxtc"}
+  { username: "D24090102939", password: "zlwsgxtc"},
+  { username: "guests1145",password:"00000000"}
 ];
 function check() {
   const username = document.getElementById('username').value;

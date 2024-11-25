@@ -8,20 +8,9 @@ html, body {
   background-size: cover; /* 背景图片覆盖整个页面 */
   height: 100%; /* 页面高度为100% */
 }
-#content {
-  -webkit-box-shadow: none; /* 去掉阴影效果 */
-  box-shadow: none; /* 去掉阴影效果 */
-  background: transparent; /* 背景设置为透明 */
-}
 
-/* 元素的阴影效果，并将背景设置为透明。 */
-
-#content #list-languages {
-  text-align: right; /* 文本对齐设置为右对齐 */
-}
 
 /* 文本对齐设置为左对齐 */
-
 #login {
   float: none; /* 不浮动 */
   width: 100%; /* 宽度为100% */
