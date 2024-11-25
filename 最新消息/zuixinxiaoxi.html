@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <!--索引中点击最新消息跳转界面-->
+    <div class="newpage">
+        <div id="left-icon">
+            <div id="expand">
+                <img src="https://cdn-fusion.imgcdn.store/i/2024/28d909ba7109098c.jpg" alt="公众号"  width="100%" height="100%">
+            </div>
+            <img src="https://lib.cityu.edu.mo/themes/front/img/fix-icon6.png" alt="weixin" width="50px" height="50px">
+        </div>
+        <img src="https://cdn-fusion.imgcdn.store/i/2024/cc46296b83f69865.jpg" alt="最新消息" width="70%">
+    </div>
+</body>
+<!--小标签事件JavaScript-->
+<script>
+    var icon = document.getElementById('left-icon');
+    var expand = document.getElementById('expand');
+    icon.addEventListener('mouseover', function () {
+        expand.style.display = 'block';
+        icon.style.cursor = 'pointer'
+    });
+
+    icon.addEventListener('mouseout', function () {
+        expand.style.display = 'none';
+    });
+</script>
+
+</html>
